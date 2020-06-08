@@ -17,7 +17,8 @@ public var ZYNavigationHeight: CGFloat = 44
 
 let ZYScreenWidth: CGFloat = UIScreen.main.bounds.size.width
 let ZYScreenHeight: CGFloat = UIScreen.main.bounds.size.height
-let ZYIsiPhoneX: Bool = UIScreen.instancesRespond(to: #selector(getter: UIScreen.currentMode)) && UIScreen.main.currentMode!.size == CGSize(width: 1125, height: 2436)
-let ZYStatusBarHeight: CGFloat = ZYIsiPhoneX ? 44 : 20
+let ZYIsFullScreen: Bool = UIScreen.main.nativeBounds.height == 2436 || UIScreen.main.nativeBounds.height == 2688 || UIScreen.main.nativeBounds.height == 1792
+
+let ZYStatusBarHeight: CGFloat = ZYIsFullScreen ? 44 : 20
 let ZYNavigationTotalHeight: CGFloat = ZYStatusBarHeight + ZYNavigationHeight
-let ZYHomeBarHeight: CGFloat = ZYIsiPhoneX ? 34 : 0
+let ZYHomeBarHeight: CGFloat = ZYIsFullScreen ? 34 : 0

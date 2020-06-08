@@ -433,11 +433,11 @@ class ZYAlbumBottomView: UIView {
     }
     
     convenience init() {
-        self.init(frame: CGRect(x: 0, y: ZYScreenHeight-ZYHomeBarHeight-44, width: ZYScreenWidth, height: 44+ZYHomeBarHeight), type: .normal)
+        self.init(frame: CGRect(x: 0, y: ZYScreenHeight-ZYHomeBarHeight-44-40, width: ZYScreenWidth, height: 44+ZYHomeBarHeight), type: .normal)
     }
     
     convenience init(type: ZYAlbumBottomViewType) {
-        self.init(frame: CGRect(x: 0, y: ZYScreenHeight-ZYHomeBarHeight-44, width: ZYScreenWidth, height: 44+ZYHomeBarHeight), type: type)
+        self.init(frame: CGRect(x: 0, y: ZYScreenHeight-ZYHomeBarHeight-44-40, width: ZYScreenWidth, height: 44+ZYHomeBarHeight), type: type)
     }
     
     convenience override init(frame: CGRect) {
