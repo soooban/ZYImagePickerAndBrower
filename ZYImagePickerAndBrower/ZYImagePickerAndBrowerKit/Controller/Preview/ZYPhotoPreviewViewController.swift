@@ -61,7 +61,7 @@ class ZYPhotoPreviewViewController: ZYBaseViewController, UICollectionViewDelega
         flowLayout.scrollDirection = .horizontal
         flowLayout.headerReferenceSize = CGSize(width: 10, height: 70)
         //  collectionView
-        let collectionView = UICollectionView(frame: CGRect(x: 0, y: ZYScreenHeight-ZYHomeBarHeight-44 - 81, width: ZYScreenWidth, height: 80), collectionViewLayout: flowLayout)
+        let collectionView = UICollectionView(frame: CGRect(x: 0, y: ZYScreenHeight-ZYHomeBarHeight-44-81-ZYIOS13Height, width: ZYScreenWidth, height: 80), collectionViewLayout: flowLayout)
         collectionView.backgroundColor = UIColor(white: 0.1, alpha: 0.9)
         collectionView.isPagingEnabled = false
         //  添加协议方法

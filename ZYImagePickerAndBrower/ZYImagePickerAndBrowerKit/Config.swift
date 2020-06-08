@@ -22,3 +22,4 @@ let ZYIsFullScreen: Bool = UIScreen.main.nativeBounds.height == 2436 || UIScreen
 let ZYStatusBarHeight: CGFloat = ZYIsFullScreen ? 44 : 20
 let ZYNavigationTotalHeight: CGFloat = ZYStatusBarHeight + ZYNavigationHeight
 let ZYHomeBarHeight: CGFloat = ZYIsFullScreen ? 34 : 0
+let ZYIOS13Height: CGFloat = ProcessInfo().isOperatingSystemAtLeast(OperatingSystemVersion(majorVersion: 13, minorVersion: 0, patchVersion: 0)) ? 40 : 0
